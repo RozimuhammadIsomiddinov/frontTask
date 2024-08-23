@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RENT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <img src="./images/logo.svg" alt="" class="logo" />
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Квартиры</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info px-5">
+          <a href="mailto:mail@yandex.ru">
+            <img
+              src="./images/Icon (1).png"
+              alt=""
+              class="icon"
+            />mail@yandex.ru
+          </a>
+          <a href="tel:+79997762500"
+            ><img src="./images/Icon (2).svg" alt="" />+7 (919) 714-25-00</a
+          >
+          <button class="order mt-2">Заказать звонок</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="apartments">
+          <h1>Наши квартиры</h1>
+          <div class="row">
+            <div class="col-md-4 image-container">
+              <img src="images/Background.svg" alt="" />
+              <!----start--->
+              <div class="houses">
+                <h4 class="where">Однокомнатная квартира</h4>
+                <p class="about">
+                  Сдам 1- квартиру с балконом есть всё необходимое для
+                  проживания выписываю ДОКУМЕНТЫ ЧЕК ОНЛАЙН 25+звонить...
+                </p>
+                <h3 class="cost">1 200 ₽ за сутки</h3>
+
+                <button class="location">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Юбилейная 108
+                  <button class="btn btn-warning mt-3 rounded-bottom">
+                    Подробнее
+                  </button>
+                </button>
+              </div>
+              <!----end--->
+            </div>
+            <div class="col-md-4 image-container">
+              <img src="images/Background.png" alt="" />
+              <div class="houses">
+                <h4 class="where">Однокомнатная квартира</h4>
+                <p class="about">
+                  СДАМ 1 КВАРТИРУ есть все необходимое для проживания
+                  холодильник, мик.печь,ст.машина выписываем...
+                </p>
+                <h3 class="cost">1 000 ₽ за сутки</h3>
+                <button class="location" onclick="loc">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Юбилейная 108
+                </button>
+                <button class="btn btn-warning mt-3 rounded-bottom">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 image-container">
+              <img src="images/Background (1).png" alt="" />
+              <!----start--->
+              <div class="houses">
+                <h4 class="where">Однокомнатная квартира</h4>
+                <p class="about">
+                  Сдам 1- квартиру с балконом есть всё необходимое для
+                  проживания выписываю ДОКУМЕНТЫ ЧЕК ОНЛАЙН 25+звонить...
+                </p>
+                <h3 class="cost">1 200 ₽ за сутки</h3>
+                <button class="location">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Юбилейная 108
+                </button>
+                <button class="btn btn-warning mt-3 rounded-bottom">
+                  Подробнее
+                </button>
+              </div>
+              <!----end--->
+            </div>
+            <div class="col-md-4 image-container">
+              <img src="images/Background (2).png" alt="" />
+              <!----start--->
+              <div class="houses">
+                <h4 class="where">Двухкомнатная квартира</h4>
+                <p class="about">
+                  СДАМ 2 КОМНАТНУЮ КВАРТИРУ есть балкон всё необходимое для
+                  комфортного проживания, холодильник, мик.печь...
+                </p>
+                <h3 class="cost">1 500 ₽ за сутки</h3>
+                <button class="location">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Красноборова, 11
+                </button>
+                <button class="btn btn-warning mt-3 rounded-bottom">
+                  Подробнее
+                </button>
+              </div>
+              <!----end--->
+            </div>
+            <div class="col-md-4 image-container">
+              <img src="images/Background (3).png" alt="" />
+              <!----start--->
+              <div class="houses">
+                <h4 class="where">Трёхкомнатная квартира</h4>
+                <p class="about">
+                  СДАМ 3 КОМНАТНУЮ КВАРТИРУ гостям города , бригаде , есть всё
+                  необходимое для проживания до 7 ми спальных мест...
+                </p>
+                <h3 class="cost">1 500 ₽ за сутки</h3>
+                <button class="location">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Свердлова, 134
+                </button>
+                <button class="btn btn-warning mt-3 rounded-bottom">
+                  Подробнее
+                </button>
+              </div>
+              <!----end--->
+            </div>
+            <div class="col-md-4 image-container">
+              <img src="images/Background (4).png" alt="" />
+              <!----start--->
+              <div class="houses">
+                <h4 class="where">Трёхкомнатная квартира</h4>
+                <p class="about">
+                  СДАМ. 3 КОМНАТНУЮ КВАРТИРУ, для гостей города. в квартире
+                  имеется все необходимое для проживания на сутки...
+                </p>
+                <h3 class="cost">1 500 ₽ за сутки</h3>
+                <button class="location">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Мира, 112
+                </button>
+                <button class="btn btn-warning mt-3 rounded-bottom">
+                  Подробнее
+                </button>
+              </div>
+              <!----end--->
+            </div>
+            <div class="col-md-4 image-container">
+              <img src="images/Background (5).png" alt="" />
+              <!----start--->
+              <div class="houses">
+                <h4 class="where">Трёхкомнатная квартира</h4>
+                <p class="about">
+                  СДАМ. 3 КОМНАТНУЮ КВАРТИРУ, для гостей города. в квартире
+                  имеется все необходимое для проживания на сутки...
+                </p>
+                <h3 class="cost">1 500 ₽ за сутки</h3>
+                <button class="location">
+                  <img src="./images/Vector (1).svg" alt="" /> Березники,
+                  ул. Мира, 112
+                </button>
+                <button class="btn btn-warning mt-3 rounded-bottom">
+                  Подробнее
+                </button>
+              </div>
+              <!----end--->
+            </div>
+          </div>
+        </section>
+
+        <section class="about-us">
+          <h2>О нас</h2>
+          <div class="about-us-content">
+            <p>
+              Сегодня «Домашняя гостиница» — одна из крупнейших в Пермском крае
+              гостиничных сетей, динамично расширяющая географический охват
+              и повышающая качество сервиса.
+            </p>
+            <ul class="d-flex">
+              <li>
+                <img src="./images/deal 1.svg" alt="" />
+                <p class="number">40+</p>
+                лет опыта
+              </li>
+              <li>
+                <img src="./images/review 2.svg" alt="" />
+                <p class="number">100+</p>
+                квартир
+              </li>
+              <li>
+                <img src="./images/home 1.svg" alt="" />
+                <p class="number">9</p>
+                локаций
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <h1>контакт</h1>
+          <div>
+            <ul class="contact">
+              <li>
+                <img src="./images/Phone (1).svg" alt="" />Пермский край, город
+                Березники
+              </li>
+              <li><img src="./images/Mail (2).svg" alt="" />mail@yandex.ru</li>
+              <li><img src="./images/Icon.svg" alt="" />+7 (919) 714-25-00</li>
+              <li id="map"></li>
+            </ul>
+
+            <ul class="contact-net">
+              <li>
+                <img src="./images/instagramm.svg" alt="" />
+                <p>arendakvartir59</p>
+                <button class="btn btn-primary col-md-2 offset-md-2">
+                  Подписаться
+                </button>
+              </li>
+              <li>
+                <img src="./images/vk (1).svg" alt="" />
+                <p class="">arendakvartir59</p>
+                <button class="btn btn-primary col-md-2 offset-md-2">
+                  Подписаться
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!--ideas-begin--->
+          <div class="mind">
+            <h3>Отзывы клиентов</h3>
+            <div class="user-means">
+              <div class="mean">
+                <h6>Уютная квартира</h6>
+                <img src="./images/Star 1.svg" alt="" class="cost" />
+                <div class="item">
+                  <p class="text">
+                    Первый раз отдыхали в Березниках, времени было мало
+                    соответственно жильё искали заранее. Залог вносили
+                    с опасением, и очень рады что они были напрасными.
+                    Всё супер. Нам понравилось!
+                  </p>
+                  <div>
+                    <h6 class="username">Екатерина Трушникова</h6>
+                    <p class="country">г. Пермь</p>
+                    <h6 class="date">2 января 2021</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="mean">
+                <h6>Клёвый вид на город</h6>
+                <img src="./images/Star 1.svg" alt="" class="cost" />
+                <div class="item">
+                  <p class="text">
+                    Хочу поблагодарить за квартиру на ул. Юбилейной, д. 108.
+                    Удобное месторасположение, совсем рядом с центром. Квартира
+                    уютная, соседей не слышно, мы прекрасно отдохнули. Все
+                    что нужно для приготовления еды есть.
+                  </p>
+                  <div>
+                    <h6 class="username">Иван Огородников</h6>
+                    <p class="country">г. Краснокамск</p>
+                    <h6 class="date">15 сентября 2019</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="mean">
+                <h6>Клёвый виd</h6>
+                <img src="./images/Star 1.svg" alt="" class="price" />
+                <div class="item">
+                  <p class="text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Corporis neque officiis ipsa incidunt vero reiciendis eos
+                    quo architecto asperiores tempore, id quam harum animi iure
+                    voluptate vel nemo dolore saepe.
+                  </p>
+                  <div>
+                    <h6 class="username">Иван vaselivich</h6>
+                    <p class="country">г. Краснокамск</p>
+                    <h6 class="date">25 сентября 2007</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--ideas-end-->
+
+        <section class="contact-form">
+          <div class="contact-info">
+            <div class="for-in">
+              <h3>Напишите нам</h3>
+              <form>
+                <input
+                  type="text"
+                  placeholder="Ваше имя"
+                  class="form-control form-control-lg w-1000"
+                />
+                <input
+                  type="email"
+                  placeholder="Ваш email"
+                  class="form-control form-control-lg"
+                />
+                <textarea
+                  placeholder="Ваше сообщение"
+                  class="form-control form-control-lg"
+                ></textarea>
+                <button type="submit">Отправить</button>
+              </form>
+            </div>
+            <div class="info">
+              <p>
+                Дорогой гость, если у тебя есть какие-то пожелания или притензии
+                по улучшению качества обслуживания или просто хочешь оставить
+                свой комментарий, то заполни форму. Мы обязательно ответим тебе,
+                или опубликуем его на нашем сайте.
+              </p>
+              <span style="color: #2b7af1">Татьяна Вячеславовна</span>
+              <p class="who">Директор гостиницы</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <ul>
+          <li>
+            <a href=""><img src="./images/1943356298320.svg" alt="" /></a>
+          </li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Квартиры</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">О нас</a></li>
+        </ul>
+        <ul class="mail-icons">
+          <li>
+            <a href=""
+              ><img src="./images/Mail (2).svg" alt="" />mail@yandex.ru</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/Icon.svg" alt="" />+7 (919) 714-25-00</a
+            >
+          </li>
+        </ul>
+        <ul class="foot-icons">
+          <li>
+            <a href="#"><img src="./images/telegramm.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/vk (1).svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/instagramm.svg" alt="" /></a>
+          </li>
+        </ul>
+        <hr />
+      </footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

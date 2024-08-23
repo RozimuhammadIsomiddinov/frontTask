@@ -1,0 +1,324 @@
+/* Add your CSS styles here */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  .contact-info {
+    margin-left: 10rem;
+  }
+  .order {
+    display: none;
+  }
+  .image-container {
+    height: 45rem;
+  }
+  .about {
+    font-size: 1rem;
+  }
+  .btn {
+    margin: 12rem;
+    height: 5rem;
+  }
+  .about-us-content p {
+    font-size: 1rem;
+  }
+  .about-us-content ul {
+    gap: 5px;
+  }
+  #map {
+    align-items: center;
+    height: 4rem;
+    font-size: 16px;
+  }
+  .apartment-card {
+    flex: 0 0 100%; /* Две карточки в ряд на средних экранах */
+  }
+  footer ul,
+  footer hr {
+    display: none;
+  }
+}
+.icon {
+  height: 40px;
+  border-radius: 35px;
+  background-color: #fff;
+  color: #000;
+}
+.order {
+  background: linear-gradient(89.77deg, #ff7a00 0.2%, #ffb039 99.82%);
+  border-radius: 25px;
+  height: 70px;
+  font-weight: 500;
+  color: #fff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 135.79px;
+  height: 54px;
+  top: 30px;
+  left: 80px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  box-shadow: 0px 10px 20px 0px #1111111a;
+  width: 400px;
+  height: 52px;
+  top: 25px;
+  left: 370px;
+  margin: 20px 0;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+.apartments h1 {
+  color: #007bff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 43.88px;
+  text-align: left;
+}
+.apartment-cards ul {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.cost {
+  color: #2b7af1;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.location img {
+  margin-right: 5px;
+}
+
+.wider {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: linear-gradient(89.77deg, #ff7a00 0.2%, #ffb039 99.82%);
+}
+
+.about-us {
+  margin-top: 10rem;
+}
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us-content p {
+  width: 300px;
+  right: 300px;
+  padding-right: 30px;
+}
+.number {
+  color: #2b7af1;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.about-us-content ul {
+  list-style-type: none;
+  margin: 20px 0;
+  width: 81px px;
+  height: 80px px;
+  gap: 1px;
+}
+.mind {
+  background-color: #2b7af1;
+  color: #fff;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.user-means {
+  display: flex;
+  gap: 2rem;
+  margin-left: 10rem;
+}
+.mean {
+  background-color: #fff;
+  color: #000;
+  width: 40vh;
+  height: 20vh;
+}
+.text {
+  font-size: 13px;
+}
+.contact li,
+.contact-net li {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact li img,
+.contact-net li img {
+  margin-right: 10px;
+  color: black;
+}
+
+.follow {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.follow li {
+  background-color: transparent;
+  padding: 0;
+  display: inline-block;
+}
+
+.contact-form {
+  margin-top: 35rem;
+  display: flex;
+  gap: 13rem;
+}
+.contact-info {
+  width: 1750px;
+  height: 90px;
+  left: 9rem;
+  border-radius: 5%;
+  display: flex;
+  gap: 5rem;
+  padding-left: 8rem;
+}
+
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.contact-form .for-in {
+  width: 30rem;
+  margin-left: 5rem;
+  padding-left: 1rem;
+  box-shadow: 15px 15px 50px#000000;
+  border-radius: 8%;
+  padding-top: 5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  max-height: 10rem;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  border-radius: 3%;
+  box-shadow: 15px 15px 15px #311b1bad;
+}
+
+.contact-form button {
+  background-color: #ff7a00;
+  color: #fff;
+  border-radius: 25%;
+  padding: 10px 20px;
+  margin-left: 8.5rem;
+  cursor: pointer;
+}
+.contact-form .info p {
+  font-size: 17px;
+}
+.contact-form .contact-info {
+  align-items: center;
+}
+footer {
+  padding-top: 7rem;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background-image: url(/images/Copyright.png);
+  display: flex;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  list-style-type: none;
+  margin-top: 26rem;
+  display: flex;
+  gap: 2rem;
+}
+footer ul a {
+  text-decoration: none;
+}
+footer p {
+  margin-top: 5rem;
+  padding-left: -25rem;
+}
+footer .mail-icons {
+  margin-left: 1rem;
+  gap: 2rem;
+}
+footer .foot-icons {
+  margin-left: rem;
+  gap: 1rem;
+}
+#map {
+  margin-top: 1px;
+  height: 500px;
+  margin: 15rem 10rem;
+  border-radius: 7%;
+  align-items: center;
+}
