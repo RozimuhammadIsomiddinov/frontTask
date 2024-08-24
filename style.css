@@ -282,7 +282,9 @@ footer .foot-icons {
     width: auto;
     padding-right: 0;
   }
-
+  .about-us-content ul {
+    gap: rem;
+  }
   .contact-form {
     flex-direction: column;
     margin-top: 5rem;
@@ -290,7 +292,7 @@ footer .foot-icons {
 
   .contact-form .for-in {
     width: auto;
-    margin-left: 0;
+    align-items: center;
     box-shadow: 15px 15px 25px rgb(35, 34, 34);
   }
 

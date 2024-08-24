@@ -21,4 +21,3 @@ navigator.geolocation.watchPosition((pos) => {
   }).addTo(map);
   map.fitBounds(circle.getBounds());
 }, err);
-const mapFunction = () => {};
