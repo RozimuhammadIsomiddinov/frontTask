@@ -1,11 +1,9 @@
-/* Umumiy CSS */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Umumiy konteyner */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -239,10 +237,9 @@ footer .foot-icons {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* To'liq moslashtirish */
+  object-fit: cover;
 }
 
-/* Flexbox uchun qoidalar */
 .apartments .row {
   display: flex;
   flex-wrap: wrap;
@@ -332,15 +329,14 @@ footer .foot-icons {
     display: none;
   }
   .apartments .col-md-4 {
-    flex: 1 1 100%; /* Kichik ekranlarda har bir rasmni to'liq kenglikka joylashtirish */
+    flex: 1 1 100%;
   }
 
   .apartments img {
-    height: auto; /* Kichik ekranlarda rasmning balandligini to'g'ri saqlash */
+    height: auto;
   }
 }
 
-/* Media Query for screens 1440px and below */
 @media (min-width: 769px) and (max-width: 1440px) {
   .item p {
     margin-top: 3rem;
