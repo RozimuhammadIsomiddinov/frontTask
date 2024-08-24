@@ -1,130 +1,68 @@
-/* Add your CSS styles here */
-* {
-  font-family: Arial, sans-serif;
+/* Umumiy CSS */
+body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
-@media only screen and (max-width: 576px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  .info p {
-    font-size: 1rem;
-  }
-  header nav ul {
-    display: none;
-  }
-  .contact-info {
-    margin-left: 10rem;
-  }
-  .order {
-    display: none;
-  }
-  .image-container {
-    height: 45rem;
-  }
-  .about {
-    font-size: 1rem;
-  }
-  .btn {
-    margin: 12rem;
-    height: 5rem;
-  }
-  .about-us-content p {
-    font-size: 1rem;
-  }
-  .about-us-content ul {
-    gap: 5px;
-  }
-  #map {
-    align-items: center;
-    height: 4rem;
-    font-size: 16px;
-  }
-  .apartment-card {
-    flex: 0 0 100%; /* Две карточки в ряд на средних экранах */
-  }
-  footer ul,
-  footer hr {
-    display: none;
-  }
-}
-.icon {
-  height: 40px;
-  border-radius: 35px;
-  background-color: #fff;
-  color: #000;
-}
-.order {
-  background: linear-gradient(89.77deg, #ff7a00 0.2%, #ffb039 99.82%);
-  border-radius: 25px;
-  height: 70px;
-  font-weight: 500;
-  color: #fff;
-}
+
+/* Umumiy konteyner */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
+
+/* Navbar */
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 nav .logo {
-  width: 135.79px;
-  height: 54px;
-  top: 30px;
-  left: 80px;
+  width: 136px;
+  height: auto;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
   gap: 3rem;
-  box-shadow: 0px 10px 20px 0px #1111111a;
-  width: 400px;
-  height: 52px;
-  top: 25px;
-  left: 370px;
-  margin: 20px 0;
-  color: black;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #333;
 }
+
+/* Apartments */
 .apartments h1 {
   color: #007bff;
   font-size: 36px;
   font-weight: 800;
-  line-height: 43.88px;
-  text-align: left;
 }
-.apartment-cards ul {
+
+.apartments .row {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  flex-wrap: wrap;
   gap: 20px;
 }
+
+.apartments .col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+}
+
 .cost {
   color: #2b7af1;
-}
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
 }
 
 .location {
@@ -143,61 +81,62 @@ nav a {
 }
 
 .wider {
-  padding: 10px 20px;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
   background: linear-gradient(89.77deg, #ff7a00 0.2%, #ffb039 99.82%);
+  color: #fff;
 }
 
+/* About Us */
 .about-us {
   margin-top: 10rem;
 }
+
 .about-us-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .about-us-content p {
   width: 300px;
-  right: 300px;
   padding-right: 30px;
 }
+
 .number {
   color: #2b7af1;
   font-size: 30px;
-  margin-bottom: 0;
 }
+
 .about-us-content ul {
   list-style-type: none;
   margin: 20px 0;
-  width: 81px px;
-  height: 80px px;
-  gap: 1px;
 }
+
 .mind {
-  background-color: #2b7af1;
-  color: #fff;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 10rem;
 }
+
 .user-means {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  margin-left: 10rem;
 }
+
 .mean {
   background-color: #fff;
   color: #000;
   width: 40vh;
   height: 20vh;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .text {
   font-size: 13px;
 }
+
 .contact li,
 .contact-net li {
   display: flex;
@@ -210,115 +149,232 @@ nav a {
 .contact li img,
 .contact-net li img {
   margin-right: 10px;
-  color: black;
-}
-
-.follow {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 10px;
-}
-
-.follow li {
-  background-color: transparent;
-  padding: 0;
-  display: inline-block;
 }
 
 .contact-form {
-  margin-top: 35rem;
+  margin-top: 3rem;
   display: flex;
-  gap: 13rem;
+  gap: 2rem;
+  flex-direction: column;
 }
+
 .contact-info {
-  width: 1750px;
-  height: 90px;
-  left: 9rem;
-  border-radius: 5%;
   display: flex;
-  gap: 5rem;
-  padding-left: 8rem;
+  gap: 2rem;
 }
 
 .contact-info a {
   color: #000;
   text-decoration: none;
   font-size: 18px;
-  margin-top: 20px;
 }
+
 .contact-form .for-in {
-  width: 30rem;
-  margin-left: 5rem;
-  padding-left: 1rem;
-  box-shadow: 15px 15px 50px#000000;
-  border-radius: 8%;
-  padding-top: 5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input,
 .contact-form textarea {
-  max-height: 10rem;
-  width: 50%;
+  width: 100%;
   margin-bottom: 20px;
-  margin-left: 25px;
-  border-radius: 3%;
-  box-shadow: 15px 15px 15px #311b1bad;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button {
   background-color: #ff7a00;
   color: #fff;
-  border-radius: 25%;
+  border: none;
+  border-radius: 25px;
   padding: 10px 20px;
-  margin-left: 8.5rem;
   cursor: pointer;
 }
-.contact-form .info p {
-  font-size: 17px;
-}
-.contact-form .contact-info {
-  align-items: center;
-}
+
+/* Footer */
 footer {
-  padding-top: 7rem;
-  color: #fff;
   padding: 20px;
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  background-image: url(/images/Copyright.png);
-  display: flex;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 footer ul {
   list-style-type: none;
-  margin-top: 26rem;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 2rem;
-}
-footer ul a {
-  text-decoration: none;
-}
-footer p {
-  margin-top: 5rem;
-  padding-left: -25rem;
-}
-footer .mail-icons {
-  margin-left: 1rem;
-  gap: 2rem;
-}
-footer .foot-icons {
-  margin-left: rem;
+  justify-content: center;
   gap: 1rem;
 }
+
+footer ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .mail-icons,
+footer .foot-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 #map {
-  margin-top: 1px;
-  height: 500px;
-  margin: 15rem 10rem;
-  border-radius: 7%;
-  align-items: center;
+  height: 300px;
+  border-radius: 7px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* To'liq moslashtirish */
+}
+
+/* Flexbox uchun qoidalar */
+.apartments .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.apartments .col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+  header nav ul {
+    display: none;
+  }
+
+  .order {
+    display: none;
+  }
+
+  .apartments .row {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .apartments img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-content p {
+    width: auto;
+    padding-right: 0;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .contact-form .for-in {
+    width: auto;
+    margin-left: 0;
+    box-shadow: 15px 15px 25px rgb(35, 34, 34);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    box-shadow: 15px 15px 25px rgb(44, 44, 162);
+  }
+
+  .contact-form button {
+    margin-left: 0;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .mind h3 {
+    margin: 20% 10% 10%;
+    text-align: center;
+  }
+
+  .user-means {
+    padding-left: 5%;
+  }
+
+  .item p {
+    display: none;
+  }
+
+  #map {
+    margin: 5rem 1rem;
+  }
+
+  footer {
+    display: none;
+  }
+  .apartments .col-md-4 {
+    flex: 1 1 100%; /* Kichik ekranlarda har bir rasmni to'liq kenglikka joylashtirish */
+  }
+
+  .apartments img {
+    height: auto; /* Kichik ekranlarda rasmning balandligini to'g'ri saqlash */
+  }
+}
+
+/* Media Query for screens 1440px and below */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .item p {
+    margin-top: 3rem;
+    min-width: 10rem;
+    max-height: 12rem;
+    overflow: auto;
+    gap: 5rem;
+  }
+  .mean {
+    padding: 1rem;
+    margin-bottom: 25rem;
+  }
+
+  .mean h6 {
+    font-size: 17px;
+  }
+
+  .mean img {
+    width: 19px;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  .username {
+    font-size: 15px;
+  }
+
+  .country,
+  .date {
+    font-size: 13px;
+  }
+  footer {
+    display: block;
+  }
 }
